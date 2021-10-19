@@ -21,9 +21,9 @@ def trigger_email():
     msubject = "EFX Gateway File Routing Notification_{}".format(datetime.now().strftime('%Y%m%d-%H%M%S'))
 
     # setup the parameters of the message
-    msg['From'] = "AF40411@ANTHEM.COM"
-    msg['To'] = "AG18144@ANTHEM.COM"
-    msg['Cc'] = "AF40411@ANTHEM.COM"
+    msg['From'] = "From@email"
+    msg['To'] = "TO@email"
+    msg['Cc'] = "CC@Email"
     msg['Subject'] = msubject
 
     # Email Body
@@ -47,7 +47,7 @@ def trigger_email():
 
     # create server
     try:
-        server = smtplib.SMTP('smtpinternal.wellpoint.com', 25)
+        server = smtplib.SMTP('server',xx)
         server.sendmail(msg['From'], toaddrs, msg.as_string())
         print ("Successfully sent email")
         del msg
