@@ -1,5 +1,5 @@
 """
-    EFX.py, by Rajagopalan S(AF40411), Thirumavalavan N (AG13731), 2021-04-20.
+    EFX.py, by Rajagopalan S(AF40411), , 2021-04-20.
 
     This program make a request to the EFX portal with the given list of PRODUCER-ID's
     and gets the Failed/Error transfers and saves it into the excel file.
@@ -332,7 +332,7 @@ if __name__ == '__main__':
 
         print(user_id)
 
-        my_bot = MyBotHome('https://efx.anthem.com/myfilegateway/home.do', user_id, pass_id,
+        my_bot = MyBotHome('Masked URL', user_id, pass_id,
                            formatted_date)
                            #   '04/25/2021')
 
